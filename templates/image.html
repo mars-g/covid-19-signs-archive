@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="title">Covid-19 Signs Archive</div>
+    <div class="content">
+        <div class="image"><img id="picture" class="picture" src="{{url_for('static', filename='_1.jpg')}}"></div>
+        <div class="text">
+            <div class="content-title">Location</div>
+            <div class="content-text"> {{ location }}</div>
+            <div class="content-title">Date</div>
+            <div class="content-text"> {{ tags.DateTimeOriginal }}</div>
+            <div class="content-title">Author</div>
+            <div class="content-text"> {{ author }}</div>
+            <div class="content-title">Text</div>
+            <div class="content-text"> {{ tags.ImageDescription }}</div>
+        </div>
+    </div>
+</div>
+
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+}
+.picture {
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+}
+.title {  
+  display: block;
+  font-weight: 300;
+  font-size: 60px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid black;
+}
+.text {
+    max-width: 50%;
+}
+.content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image {
+    font-size: 80px;
+}
+
+.content-title {
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+.links {
+  padding-top: 15px;
+}
+</style>
