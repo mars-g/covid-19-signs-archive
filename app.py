@@ -25,8 +25,6 @@ def predicton(image_url):
 		if isinstance(data, bytes):
 			data = data.decode()
 		tags[tag] = data
-		print(tag)
-		print(data)
 	# extract gps coordinates
 	# if statements account for W or S gps values (which should be negative)
 	lat = float(tags['GPSInfo'].get(2)[0]) + float(tags['GPSInfo'].get(2)[1])/60 
