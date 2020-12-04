@@ -1,4 +1,4 @@
-### COVID-19 Sigs Archive
+# COVID-19 Sigs Archive
 
 Very simple example of how a server could display local image metadata
 
